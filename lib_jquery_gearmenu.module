@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Contains hook implementations.
+ */
+
+/**
+ * Implements hook_libraries_info().
+ */
+function lib_jquery_nicescroll_libraries_info() {
+  return array(
+    'jquery_gearmenu' => array(
+      'name' => t('jQuery GearMenu'),
+      'vendor url' => 'http://ottawadeveloper.com',
+      'download url' => 'https://github.com/ottawadeveloper/jquery.gearmenu',
+      'version arguments' => array(
+        'file' => 'README.md',
+        'pattern' => '`v\. (.{1,})`i',
+      ),
+      'files' => array(
+        'js' => array(
+          'jquery.gearmenu.js',
+        ),
+        'css' => array(
+          'jquery.gearmenu.css',
+        ),
+      ),
+    ),
+  );
+}

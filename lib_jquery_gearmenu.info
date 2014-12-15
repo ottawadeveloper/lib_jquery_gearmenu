@@ -1,0 +1,6 @@
+name = GearMenu Library
+package = Library Integration
+description = "Provides the gearmenu library"
+core = 7.x
+
+dependencies[] = libraries
